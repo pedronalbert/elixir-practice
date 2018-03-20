@@ -6,11 +6,11 @@ defmodule Users do
   end
 
   def list do
-    GenServer.call(__MODULE__, :list_users)
+    GenServer.call(__MODULE__, :list)
   end
 
   def add(user) do
-    GenServer.call(__MODULE__, {:add_user, user})
+    GenServer.call(__MODULE__, {:add, user})
   end
 
   ###
